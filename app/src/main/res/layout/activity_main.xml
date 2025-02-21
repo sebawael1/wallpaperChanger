@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Pick Multiple Images Button -->
+
+
+        <Button
+            android:id="@+id/btnPickImage"
+            android:layout_width="264dp"
+            android:layout_height="99dp"
+            android:layout_marginBottom="164dp"
+            android:backgroundTint="#A3D7E1"
+            android:gravity="center"
+            android:text="Pick Multiple Images"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/setbackground"
+            android:layout_width="239dp"
+            android:layout_height="87dp"
+            android:layout_marginBottom="52dp"
+            android:backgroundTint="#A3D7E1"
+            android:gravity="center"
+            android:text="Set As Background"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageSwitcher
+            android:id="@+id/imagesIs"
+            android:layout_width="969dp"
+            android:layout_height="537dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-33dp"
+            tools:layout_editor_absoluteY="108dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="443dp"
+                android:layout_height="794dp"
+                app:srcCompat="@drawable/seba"
+                tools:ignore="HardcodedText,NotSibling" />
+        </ImageSwitcher>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
